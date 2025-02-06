@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        fadeIn: 'fadeIn 2s ease-in-out',
+                        bounceSlow: 'bounce 3s infinite'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <!-- Navbar -->
+    <nav class="p-5 bg-gray-800 shadow-md border-b border-gray-700 animate-fadeIn">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">My Portfolio</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+                <li><a href="#education" class="hover:text-gray-400">Education</a></li>
+                <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+                <li><a href="#resume" class="hover:text-gray-400">Download Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col justify-center items-center text-center px-5 animate-fadeIn">
+        <h2 class="text-4xl font-bold">Hi, I'm <span class="text-yellow-400">Your Name</span></h2>
+        <p class="text-lg mt-3 max-w-lg">A passionate developer specializing in web development, data science, and
+            machine learning.</p>
+        <a href="#projects"
+            class="mt-5 px-6 py-2 bg-yellow-400 text-black font-bold rounded-lg hover:bg-yellow-500 transition duration-300">View
+            Projects</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="relative py-20 text-center border-t border-gray-700 animate-fadeIn">
+        <img src="C:\Users\msi\Desktop\chatgpt\photos\WhatsApp Image 2025-01-19 at 14.58.17.jpeg" alt="Your Image"
+            class="absolute inset-0 w-full h-full object-cover opacity-40">
+        <div class="relative z-10 max-w-3xl mx-auto">
+            <h2 class="text-3xl font-semibold">About Me</h2>
+            <p class="mt-3">I have experience in building web applications, working with AI models, and developing
+                machine learning solutions.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 text-center border-t border-gray-700 animate-fadeIn">
+        <h2 class="text-3xl font-semibold">Projects</h2>
+        <div class="mt-6 flex flex-wrap justify-center gap-6">
+            <div
+                class="bg-gray-800 p-5 rounded-lg w-80 shadow-md hover:shadow-xl transition-transform transform hover:scale-105 animate-fadeIn">
+                <h3 class="text-xl font-bold">Project 1</h3>
+                <p class="mt-2">A description of the project.</p>
+            </div>
+            <div
+                class="bg-gray-800 p-5 rounded-lg w-80 shadow-md hover:shadow-xl transition-transform transform hover:scale-105 animate-fadeIn">
+                <h3 class="text-xl font-bold">Project 2</h3>
+                <p class="mt-2">A description of the project.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 text-center border-t border-gray-700 animate-fadeIn">
+        <h2 class="text-3xl font-semibold">Education</h2>
+        <p class="mt-3 max-w-2xl mx-auto">Details about your educational background.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 text-center border-t border-gray-700 animate-fadeIn">
+        <h2 class="text-3xl font-semibold">Contact Me</h2>
+        <p class="mt-3">Feel free to reach out via email or social media.</p>
+        <div class="mt-5">
+            <a href="mailto:your.email@example.com" class="text-yellow-400 hover:underline">your.email@example.com</a>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-20 text-center border-t border-gray-700 animate-fadeIn">
+        <h2 class="text-3xl font-semibold">Download Resume</h2>
+        <a href="your-resume.pdf" download
+            class="mt-5 px-6 py-2 bg-yellow-400 text-black font-bold rounded-lg hover:bg-yellow-500 transition duration-300">Download</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-gray-800 text-center border-t border-gray-700 animate-fadeIn">
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
